@@ -41,7 +41,7 @@
         height: 0;
         border-left: 80px solid transparent;
         border-right: 80px solid transparent;
-        border-bottom: 100px solid black;
+        border-bottom: 100px solid green
     }
 }
 body {
@@ -64,17 +64,12 @@ main {
 }
 
 .gallery {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto;
 }
 .threebox{
     display: flex;
     
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
 }
 
 .virtual-room {
@@ -83,7 +78,6 @@ main {
     margin: 20px 0;
 }
 
-/* Form section */
 form {
     width: 80%;
     max-width: 600px;
@@ -124,23 +118,35 @@ form button:hover {
     position: relative;
     margin: auto;
     display: block;
-    border: solid 4px black;
-    margin-top: 8%;
-    width: 400px;
-    height: 320px;
+    border: solid 0px black;
+    margin-top: 1%;
     background: none;
+    background-color: #1e78a1;
+    margin-right: 0%;
+    margin-left: 1%;
     justify-content: center;
-    background-color: turquoise;
 }
 .longbox{
-    width: 100%;
-    height: 50vh;
+    width: 470px;
+    height: auto;
 }
 
-.circle1, .circle2, .circle3, .circle4, .circle5, .circle6{
-    background-color: orange;
+.box{
+    width: 158px;
+    height: 70px;
+}
+
+.circle1,.circle3, .circle5{
+    background-color: #ffd966;
+    border-radius: 50%;
+    position: fixed;
+}
+
+.circle2, .circle4, .circle6{
+    background-color: lightcoral;
     border-radius: 50%;
 }
+
 .arrow-up {
     width: 0; 
     height: 0; 
